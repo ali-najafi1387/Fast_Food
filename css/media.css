@@ -29,9 +29,7 @@ margin-top: 3rem;
     .action_order button:nth-child(2){
     padding: 16px;
 }
-.row_grid_food_product{
-    grid-template-columns: repeat(2,1fr);
-}
+
 }
 
 @media (max-width:834px) {
@@ -53,9 +51,9 @@ margin-top: 3rem;
     .header_buttom{
         grid-template-columns:  380px 360px;
     }
-    /* .fixed_box_delivery{
-        top: -2rem;
-    } */
+    .row_grid_food_product{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 @media (max-width:768px) {
     .header_buttom{
