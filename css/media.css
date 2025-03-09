@@ -1,0 +1,124 @@
+@media (max-width:1042px) {
+.header_buttom{
+margin-top: 3rem;
+}
+.content_left_header_buttom{
+    width: 330px;
+}
+.content_left_header_buttom h1{
+    font-size: 32px;
+    line-height: 3.5rem;
+}
+.content_left_header_buttom p{
+    width: 280px;
+    line-height: 1.8rem;
+}
+}
+
+@media (max-width:992px) {
+    .header_buttom{
+        grid-template-columns:  380px 460px;
+    }
+    .fixed_box_delivery{
+        top: -2rem;
+        left: -7rem;
+    }
+    .button_action_order{
+        gap: 6px;
+    }
+    .action_order button:nth-child(2){
+    padding: 16px;
+}
+.row_grid_food_product{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+
+@media (max-width:834px) {
+    .navigation{
+        grid-template-columns: 45px 190px 35px;
+    }
+    .navigation > ul {
+        display: none;
+    }
+
+    .link__navigation {
+        justify-self: center;
+    }
+
+    .menu_burger {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header_buttom{
+        grid-template-columns:  380px 360px;
+    }
+    /* .fixed_box_delivery{
+        top: -2rem;
+    } */
+}
+@media (max-width:768px) {
+    .header_buttom{
+        grid-template-columns:  300px 320px;
+    }
+    .action_order{
+        justify-content: flex-start;
+        gap: 8px;
+    }
+    .fixed_box_delivery{
+        padding: 4px;
+    }
+}
+@media (max-width:676px) {
+    .header_buttom{
+        grid-template-columns: 1fr;
+    margin-top: 65px;
+    }  
+     .content_left_header_buttom{
+        margin: 0 auto;
+    width: 100%; 
+       text-align: center;
+    }
+    .content_left_header_buttom h1{
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+    .content_left_header_buttom p{
+      width: 100%;
+    }
+    .content_right_header_buttom{
+        margin-top: 1rem;
+    }
+    .action_order{
+        gap: 30px;
+    }
+    .action_order button:nth-child(2) {
+        font-size: 14px;
+padding: 10px 8px;
+    }
+  .order_food_desktop{
+    display: none;
+  }
+  .order_food_mobile{
+    max-width: 100%;
+    display: flex;
+    margin: 100px auto;
+    flex-direction: column;
+}
+.order_food_price > span:nth-child(2){
+    font-size: 16px;
+    font-weight: 500;
+}
+.fixed_box_delivery{
+    padding: 0.8rem;
+    position: relative;
+    top: 1rem;
+    left: 0rem;
+}
+}
+
+@media (max-width:574px) {
+    .row_grid_food_product{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
