@@ -13,6 +13,9 @@ margin-top: 3rem;
     width: 280px;
     line-height: 1.8rem;
 }
+.row_grid_food_off {
+    grid-template-columns: repeat(2,1fr);
+}
 }
 
 @media (max-width:992px) {
@@ -54,6 +57,7 @@ margin-top: 3rem;
     .row_grid_food_product{
         grid-template-columns: repeat(2,1fr);
     }
+   
 }
 @media (max-width:768px) {
     .header_buttom{
@@ -113,10 +117,16 @@ padding: 10px 8px;
     top: 1rem;
     left: 0rem;
 }
+.row_grid_food_off {
+    grid-template-columns: repeat(1,1fr);
+}   
 }
 
 @media (max-width:574px) {
     .row_grid_food_product{
         grid-template-columns: repeat(1,1fr);
+    }
+    .line_right_item_grid_fast_food {
+        width: 180px;
     }
 }
