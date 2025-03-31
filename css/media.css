@@ -334,7 +334,7 @@ margin: 0 auto;
     }
     .row_grid_section_footer{
       grid-template-columns: repeat(2,1fr);
-      gap: 0;
+     padding: 1rem;
     }
     .info_site_footer{
         width: 300px;
