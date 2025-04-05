@@ -87,7 +87,7 @@ img {
 
 .navigation {
     display: grid;
-    grid-template-columns: 58px 510px 190px;
+    grid-template-columns: 58px 590px 190px;
     justify-content: space-between;
     align-items: center;
 }
@@ -96,7 +96,7 @@ img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 2.5rem;
+    gap: 1.8rem;
 }
 .menu__hassub {
     cursor: pointer;

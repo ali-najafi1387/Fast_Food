@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+    background-color: #FFFEF9;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color_323232);
+}
+
+ul {
+    list-style: none;
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins/poppins-bold-webfont.woff') format(woff);
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins/poppins-semibold-webfont.woff') format(woff);
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins/poppins-medium-webfont.woff') format(woff);
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins/poppins-regular-webfont.woff') format(woff);
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins/poppins-light-webfont.woff') format(woff);
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    border: none;
+}
+
+:root {
+    --color_C90000: #C90000;
+    --color_7D7C7C: #7D7C7C;
+    --color_504F4F: #504F4F;
+    --color_323232: #323232;
+    --color_FFC300: #FFC300;
+    --color_FFF6A3: #FFF6A3;
+    --color_FFFDE6: #FFFDE6;
+    --color_E3E3E3: #E3E3E3;
+    --color_F1F1F1: #F1F1F1;
+    --color_FFF: #FFF;
+}
+
+
+/* Start__app__css */
+.grid_cart_shopping {
+    padding: 0 50px 0 50px;
+    margin-top: 46px;
+    color: #262626;
+}
+
+.row_header_cart_shopping {
+    display: grid;
+    grid-template-columns: 60% 1fr 1fr auto;
+    justify-content: space-between;
+    border-bottom: 2px solid #ebecec;
+    padding-bottom: 23px;
+    margin-bottom: 40px;
+    font-weight: 500
+}
+
+.row_product_cart_shopping {
+    display: grid;
+    grid-template-columns: 60% 1fr 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ebecec;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.product_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 60px;
+}
+
+.remove_for_cart_shopping {
+    background-color: transparent;
+}
+
+.cuntent_product_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+}
+
+.cuntent_product_item img {
+    width: 120px;
+}
+
+.cuntent_product_item h4 {
+    font-size: 16px;
+    font-weight: 400;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.box_qty {
+    width: max-content;
+    background-color: #F6F7F8;
+    width: 110px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.miuns {
+    background-color: transparent;
+}
+
+.qty_number {
+    font-size: 14px;
+}
+
+.plus {
+    background-color: transparent;
+}
+
+.row_price_total {
+    display: grid;
+    justify-content: flex-end;
+}
+
+.box_price_total {
+    background-color: #f8f8f8;
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.row_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price_total_text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.price_total_number {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.row_total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 30px;
+    margin-top: 1rem;
+}
+
+.total_text {
+    font-size: 24px;
+}
+
+.total_price {
+    font-size: 24px;
+}
+
+.box_price_check_out {
+    width: 100%;
+    height: 50px;
+    background-color: #C90000;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
