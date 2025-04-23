@@ -291,8 +291,42 @@ button5.onclick = function tabe5() {
     if (button5.className == "") {
         button5.className = "button_active_category";
         but5 = true;
-    
-    
+        let img1 = document.getElementById("img1");
+        let h1 = document.getElementById("h1");
+        let p1 = document.getElementById("p1");
+        h1.innerHTML = "Shamrock McFlurry";
+        p1.innerHTML = "For a limited time only";
+        img1.src ="img/dessert/McFlurry M&M'S.png"
+        let img2 = document.getElementById("img2");
+        let h2 = document.getElementById("h2");
+        let p2 = document.getElementById("p2");
+        h2.innerHTML = "McFlurry";
+        p2.innerHTML = "The McDonald’s McFlurry";
+        img2.src = "img/dessert/McFlurry.png"
+        let img3 = document.getElementById("img3");
+        let h3 = document.getElementById("h3");
+        let p3 = document.getElementById("p3");
+        h3.innerHTML = "Vanilla Cone";
+        p3.innerHTML = "Treat yourself to a delicious Vanilla Cone";
+        img3.src = "img/dessert/vanila cone.png"
+        let img4 = document.getElementById("img4");
+        let h4 = document.getElementById("h4");
+        let p4 = document.getElementById("p4");
+        h4.innerHTML = "Chocolate Shake";
+        p4.innerHTML = "Looking sweet treat for any time of days";
+        img4.src = "img/dessert/chocolateshake.png"
+        let img5 = document.getElementById("img5");
+        let h5 = document.getElementById("h5");
+        let p5 = document.getElementById("p5");
+        h5.innerHTML = "Strawberry Shake";
+        p5.innerHTML = "Looking sweet treat for any time of day";
+        img5.src = "img/dessert/strawberryshake.png"
+        let img6 = document.getElementById("img6");
+        let h6 = document.getElementById("h6");
+        let p6 = document.getElementById("p6");
+        h6.innerHTML = "Hot Fudge Sundae";
+        p6.innerHTML = "Treat yourself to a delicious Hot Fudge Sundae";
+        img6.src = "img/dessert/hot_fudge_sundas.png"
         if(but1 == true)
         {
             let button1 = document.getElementById("but1")
@@ -323,14 +357,15 @@ button5.onclick = function tabe5() {
 }
 var total = document.getElementById("total");
 let ezafe = document.getElementById("ezafe");
-ezafe.onclick = function my1(){
+ezafe.onclick = function sum1(){
+    window.open("Cart_Shopping.html")
     let tedad = document.querySelector("#tedad");
     tedad.innerHTML++;
     let total = document.getElementById("total");
     total.innerHTML="$"+tedad.innerHTML*1.99
 }
 let kam = document.getElementById("kam");
-kam.onclick = function my1(){
+kam.onclick = function min1(){
     let tedad = document.querySelector("#tedad");
     if(tedad.innerHTML>=1)
     {
@@ -340,5 +375,22 @@ kam.onclick = function my1(){
     }
 
 }
+var ezafe2 = document.getElementById("ezafe2");
+let kam2 = document.getElementById("kam2");
+ezafe2.onclick = function sum2(){
+    let tedad2 = document.getElementById("tedad2");
+    tedad2.innerHTML++;
+    let tota2 = document.getElementById("total2");
+    total2.innerHTML="$"+tedad2.innerHTML*1.99
+}
+kam2.onclick = function min2(){
+    let tedad2 = document.getElementById("tedad2");
+    if(tedad2.innerHTML>=1)
+    {
+    tedad2.innerHTML--;
+    let tota2 = document.getElementById("total2");
+    total2.innerHTML="$"+tedad2.innerHTML*1.99
+    }
 
+}
 
